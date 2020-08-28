@@ -19,7 +19,7 @@ public class Part1 {
             return "";
         }
        
-        if ((stopIndex - startIndex) % 6 != 0) {
+        if ((stopIndex - startIndex) % 3 != 0) {
             return "";
         }
         
