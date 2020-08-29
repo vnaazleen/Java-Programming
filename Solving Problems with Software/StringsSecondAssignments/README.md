@@ -43,7 +43,7 @@ Print the DNA string.
 Calculate the gene by sending this DNA string as an argument to findGene. If a gene exists following our algorithm above, then print the gene, otherwise print the empty string.
 7. Write the void method printAllGenes that has one String parameter dna, representing a string of DNA. In this method you should repeatedly find genes and print each one until there are no more genes. Hint: remember you learned a while(true) loop and break.
 
-##**Part 2:** HowMany - Finding Multiple Occurrences
+## **Part 2:** HowMany - Finding Multiple Occurrences
 This assignment will write a method to determine how many occurrences of a string appear in another string.
 
 Specifically, you should do the following:
@@ -54,7 +54,7 @@ Specifically, you should do the following:
 
 3.Write the void method testHowMany has no parameters. Add code in here to call howMany with several examples and print the results. Think carefully about what types of examples would be good to test to make sure your method works correctly.
 
-##**Part 3:** How Many Genes?
+## **Part 3:** How Many Genes?
 Write a program to count how many genes are in a strand of DNA.
 
 Specifically, you should do the following:
