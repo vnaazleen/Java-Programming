@@ -1,10 +1,15 @@
 # Finding Many Genes
 
 **PROJECT TITLE:** Finding Many Genes
+
 **PURPOSE OF PROJECT:** To understand Strings & while loops
+
 **VERSION or DATE:** java 8, 29-08-2020
+
 **HOW TO START THIS PROJECT:** Read the String documentaion
+
 **AUTHOR:** Vaseem Naazleen Shaik
+
 **USER INSTRUCTIONS:**
 
 ## **Part 1:** Finding many Genes
