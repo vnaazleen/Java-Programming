@@ -12,28 +12,30 @@ import edu.duke.FileResource;
 public class Part3 {
     
     public int findStopCodon (String dna, int startIndex, String stopCodon) {
-        int stopIndex = dna.toUpperCase().indexOf(stopCodon, startIndex + 1);
-        if (stopIndex == -1) {
-            return dna.length();
-        }
+        int stopIndex = dna.indexOf(stopCodon, startIndex + 3);
         
-        if ((stopIndex - startIndex) % 3 == 0)
-        {
-            return stopIndex;
+        while (stopIndex != -1) {
+            int diff = stopIndex - startIndex;
+            if (diff % 3 == 0) {
+                return stopIndex;
+            }
+            else {
+                stopIndex = dna.indexOf(stopCodon, stopIndex + 1);
+            }
         }
         
         return dna.length();
     }
     
     public String findGene (String dna, int where) {
-        int startIndex = dna.toUpperCase().indexOf("ATG", where);
+        int startIndex = dna.indexOf("atg", where);
         if (startIndex == -1) {
             return "";
         }
         
-        int taaIndex = findStopCodon(dna, startIndex, "TAA");
-        int tagIndex = findStopCodon(dna, startIndex, "TAG"); 
-        int tgaIndex = findStopCodon(dna, startIndex, "TGA");
+        int taaIndex = findStopCodon(dna, startIndex, "taa");
+        int tagIndex = findStopCodon(dna, startIndex, "tag"); 
+        int tgaIndex = findStopCodon(dna, startIndex, "taa");
         
         int closestStopIndex = Math.min(taaIndex, Math.min(tagIndex, tgaIndex));
         if (closestStopIndex == dna.length())
@@ -70,7 +72,7 @@ public class Part3 {
             }
             System.out.println(gene);
             
-            startIndex = gene.length() + dna.indexOf(gene, startIndex);
+            startIndex = gene.length() + dna.indexOf(gene, startIndex + 1);
         }
     }
     
@@ -89,8 +91,10 @@ public class Part3 {
         int StrscdRatioGreaterthan35 = 0;
         int longestGeneSize = 0;
         int sLen;
+        int numGenes = 0;
         boolean found;
         for (String s : sr.data()) {
+            numGenes++;
             found = false;
             sLen = s.length();
             if (sLen > 9)
@@ -114,13 +118,14 @@ public class Part3 {
             }
         }
         
+        System.out.println("Number of Genes: " + numGenes);
         System.out.println("Size of longest Gene: " + longestGeneSize);
         System.out.println("Genes whose length greater than 9: " + StrsLenGreaterthan9);
         System.out.println("Genes whose CG ratio greater than 0.35: " + StrscdRatioGreaterthan35);
     }
     
     public void testProcessGene() {
-        FileResource fr = new FileResource("dna_textfiles/Axl2p.fa");
+        FileResource fr = new FileResource("dna_textfiles/brca1line.fa");
         String dna = fr.asString();
         processGenes(getAllGenes(dna));
     }
