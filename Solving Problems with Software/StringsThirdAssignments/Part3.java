@@ -72,7 +72,7 @@ public class Part3 {
             }
             System.out.println(gene);
             
-            startIndex = gene.length() + dna.indexOf(gene, startIndex + 1);
+            startIndex = gene.length() + dna.indexOf(gene, startIndex);
         }
     }
     
@@ -127,8 +127,8 @@ public class Part3 {
     public void testProcessGene() {
         FileResource fr = new FileResource("dna_textfiles/GRch38dnapart.fa");
         String dna = fr.asString();
-        int count = ( dna.split("CTG", -1).length ) - 1;
-        System.out.println(count);
+        //int count = ( dna.split("CTG", -1).length ) - 1;
+        //System.out.println(count);
         processGenes(getAllGenes(dna));
     }
 }
