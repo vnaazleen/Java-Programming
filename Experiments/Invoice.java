@@ -1,3 +1,4 @@
+
 class Invoice{
         //Define instance variables here
         String number;
