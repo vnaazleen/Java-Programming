@@ -58,9 +58,10 @@ public class ParsingExportData {
     public void tester () {
         FileResource fr = new FileResource();
         CSVParser parser = fr.getCSVParser();
-        //System.out.println(countryInfo(parser, "Germany")); --> Task - 1
-        //listExportersTwoProducts(parser, "gold", "diamonds"); --> Task - 2
-        //System.out.println(numberOfExporters(parser, "gold"));
-        bigExporters(parser, "$999,999,999");
+        // Uncomment to test methods
+        //System.out.println(countryInfo(parser, "Nauru"));
+        //listExportersTwoProducts(parser, "fish", "nuts"); 
+        //System.out.println(numberOfExporters(parser, "sugar"));
+        //bigExporters(parser, "$999,999,999,999");
     }
 }
