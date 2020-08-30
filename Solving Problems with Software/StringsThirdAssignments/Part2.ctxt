@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Part2
+comment0.text=\r\n\ Strings\ Third\ Assignments\ -\ Part\ 2\r\n\ \r\n\ @author\ Vaseem\ Naazleen\ Shaik\ \r\n\ @version\ Java\ 8,\ 30\ -\ 08\ -\ 2020\r\n
+comment1.params=dna
+comment1.target=float\ cdRatio(java.lang.String)
+comment2.params=
+comment2.target=void\ testCGRatio()
+comment3.params=args
+comment3.target=void\ main(java.lang.String[])
+numComments=4
