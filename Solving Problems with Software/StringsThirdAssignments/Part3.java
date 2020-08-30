@@ -12,7 +12,7 @@ import edu.duke.FileResource;
 public class Part3 {
     
     public int findStopCodon (String dna, int startIndex, String stopCodon) {
-        int stopIndex = dna.indexOf(stopCodon, startIndex + 1);
+        int stopIndex = dna.toUpperCase().indexOf(stopCodon, startIndex + 1);
         if (stopIndex == -1) {
             return dna.length();
         }
@@ -26,7 +26,7 @@ public class Part3 {
     }
     
     public String findGene (String dna, int where) {
-        int startIndex = dna.indexOf("ATG", where);
+        int startIndex = dna.toUpperCase().indexOf("ATG", where);
         if (startIndex == -1) {
             return "";
         }
@@ -58,6 +58,20 @@ public class Part3 {
             startIndex = gene.length() + dna.indexOf(gene, startIndex);
         }
         return allGenes;
+    }
+    
+    public void printAllGenes (String dna) {
+        int startIndex = 0;
+        while (true) {
+            String gene = findGene(dna, startIndex);
+            if (gene.isEmpty())
+            {
+                break;
+            }
+            System.out.println(gene);
+            
+            startIndex = gene.length() + dna.indexOf(gene, startIndex);
+        }
     }
     
     public float cdRatio(String dna) {
@@ -106,7 +120,8 @@ public class Part3 {
     }
     
     public void testProcessGene() {
-        FileResource fr = new FileResource("brca1line.fa");
+        FileResource fr = new FileResource("dna_textfiles/Axl2p.fa");
         String dna = fr.asString();
+        processGenes(getAllGenes(dna));
     }
 }

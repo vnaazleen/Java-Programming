@@ -57,6 +57,7 @@ public class Part1 {
         return allGenes;
     }
     
+    
     public static void main (String[] args) {
         Part1 p1 = new Part1();
         StorageResource allGenes = p1.getAllGenes("ATGATCTAATTTATGCTGCAACGGTGAAGA");
