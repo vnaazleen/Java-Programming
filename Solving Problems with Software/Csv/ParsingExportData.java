@@ -60,8 +60,8 @@ public class ParsingExportData {
         CSVParser parser = fr.getCSVParser();
         // Uncomment to test methods
         //System.out.println(countryInfo(parser, "Nauru"));
-        //listExportersTwoProducts(parser, "fish", "nuts"); 
-        //System.out.println(numberOfExporters(parser, "sugar"));
-        //bigExporters(parser, "$999,999,999,999");
+        //listExportersTwoProducts(parser, "cotton", "flowers"); 
+        //System.out.println(numberOfExporters(parser, "cocoa"));
+        bigExporters(parser, "$999,999,999,999");
     }
 }
