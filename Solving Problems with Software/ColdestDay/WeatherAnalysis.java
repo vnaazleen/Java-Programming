@@ -16,6 +16,9 @@ public class WeatherAnalysis {
     public CSVRecord coldestHourInFile (CSVParser parser) {
         CSVRecord ColdestSoFar = null;
         for (CSVRecord record : parser) {
+            if (record.get("Humidity").equals("N/A")) {
+                continue;
+            }
             if (ColdestSoFar == null) {
                 ColdestSoFar = record;
             }
@@ -35,7 +38,7 @@ public class WeatherAnalysis {
         FileResource fr = new FileResource();
         CSVParser parser = fr.getCSVParser();
         CSVRecord coldestHourinDay = coldestHourInFile(parser);
-        System.out.println("The Coldest Hour Temperature is " + coldestHourinDay.get("TemperatureF") + " at " + coldestHourinDay.get("TimeEST"));
+        System.out.println("The Coldest Hour Temperature is " + coldestHourinDay.get("TemperatureF") + " at " + coldestHourinDay.get("DateUTC"));
     }
     
     public String fileWithColdestTemperature () {
