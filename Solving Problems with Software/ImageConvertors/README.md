@@ -17,9 +17,16 @@ More specifically,
 
 **Hint:** Start with the Batch Grayscale program that processes many images, and add in code to save those files with new names.
 
+Original | Gray Scale
+:-------------------------:|:-------------------------:
+![pic](https://user-images.githubusercontent.com/54474853/92069365-c5704c00-edc6-11ea-8381-e07eb6d946f1.jpg) | ![gray-pic](https://user-images.githubusercontent.com/54474853/92069405-e173ed80-edc6-11ea-8a32-6fe0f0594811.jpg)
+
 ## Image Inversion
 
 Write a program to create new images that are photographic negatives (or inverted images) of selected images and save these new images with filenames that are related to the original images, such as adding “inverted-” in front of the old filename. In inverting an image, a pixel’s red, blue, and green components are modified to be the exact opposite within the 0 to 255 range. That is, if a pixel’s red, blue, and green values are (34, 198, 240), then that same pixel in the inverted image would have the red, blue and green values of (221, 57, 15). Note that 255 - 34 is 221, 255 - 198 is 57, and 255 - 240 is 15.
+Original | Inverted
+:-------------------------:|:-------------------------:
+![pic](https://user-images.githubusercontent.com/54474853/92069365-c5704c00-edc6-11ea-8381-e07eb6d946f1.jpg) | ![inverted-pic](https://user-images.githubusercontent.com/54474853/92069387-d620c200-edc6-11ea-87fe-4ef99e705931.jpg)
 
 To tackle this problem:
 
