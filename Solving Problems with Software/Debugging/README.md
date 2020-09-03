@@ -1,6 +1,6 @@
 # Debugging
 -----------
-**PROJECT TITLE:** Debugging
-**PURPOSE OF PROJECT:** To successfully debug java code and run.
-**VERSION or DATE:** 30 - 08 - 2020
-**AUTHORS:** Vaseem Naazkeen Shaik
+**PROJECT TITLE:** Debugging<br>
+**PURPOSE OF PROJECT:** To successfully debug java code and run.<br>
+**VERSION or DATE:** 30 - 08 - 2020<br>
+**AUTHORS:** Vaseem Naazkeen Shaik<br>
