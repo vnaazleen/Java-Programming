@@ -20,7 +20,7 @@ public class Part3 {
                 return stopIndex;
             }
             else {
-                stopIndex = dna.indexOf(stopCodon, stopIndex + 1);
+                stopIndex = dna.indexOf(stopCodon, stopIndex + 3);
             }
         }
         
@@ -29,13 +29,13 @@ public class Part3 {
     
     public String findGene (String dna, int where) {
         int startIndex = dna.indexOf("ATG", where);
-        if (startIndex == -1) {
+        if (startIndex == -1 || where == -1) {
             return "";
         }
         
         int taaIndex = findStopCodon(dna, startIndex, "TAA");
         int tagIndex = findStopCodon(dna, startIndex, "TAG"); 
-        int tgaIndex = findStopCodon(dna, startIndex, "TAA");
+        int tgaIndex = findStopCodon(dna, startIndex, "TGA");
         
         int closestStopIndex = Math.min(taaIndex, Math.min(tagIndex, tgaIndex));
         if (closestStopIndex == dna.length())
@@ -78,9 +78,9 @@ public class Part3 {
     
     public float cdRatio(String dna) {
         int cgCounts = 0;
-        for (char c : dna.toLowerCase().toCharArray()) {
-            if (c == 'c' || c == 'g') {
-                cgCounts += 1;
+        for (char c : dna.toCharArray()) {
+            if (c == 'C' || c == 'G') {
+                cgCounts++;
             }
         }
         return (float) cgCounts / dna.length();
@@ -120,13 +120,13 @@ public class Part3 {
         
         System.out.println("Number of Genes: " + numGenes);
         System.out.println("Size of longest Gene: " + longestGeneSize);
-        System.out.println("Genes whose length greater than 9: " + StrsLenGreaterthan60);
+        System.out.println("Genes whose length greater than 60: " + StrsLenGreaterthan60);
         System.out.println("Genes whose CG ratio greater than 0.35: " + StrscdRatioGreaterthan35);
     }
     
     public void testProcessGene() {
-        FileResource fr = new FileResource("dna_textfiles/GRch38dnapart.fa");
-        String dna = fr.asString();
+        FileResource fr = new FileResource();
+        String dna = fr.asString().toUpperCase();
         //int count = ( dna.split("CTG", -1).length ) - 1;
         //System.out.println(count);
         processGenes(getAllGenes(dna));
