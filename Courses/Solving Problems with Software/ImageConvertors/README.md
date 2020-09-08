@@ -1,8 +1,8 @@
 # Image Conversions
-**PROJECT TITLE:** Batch Grayscale and Image Inversion
-**PURPOSE OF PROJECT:** Working with Images.
-**VERSION or DATE:** Java 8, 03-09-2020
-**AUTHORS:** Shaik Vaseem Naazleen
+**PROJECT TITLE:** Batch Grayscale and Image Inversion<br>
+**PURPOSE OF PROJECT:** Working with Images.<br>
+**VERSION or DATE:** Java 8, 03-09-2020<br>
+**AUTHORS:** Shaik Vaseem Naazleen<br>
 **USER INSTRUCTIONS:**
 
 ## Batch Grayscale
