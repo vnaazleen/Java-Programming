@@ -2,7 +2,7 @@ public class College {
 	static int numOfStudents;
 	static int numOfFaculity;
 	
-	static class Student {
+	class Student {
 		
 		private String name;
 		private String rollNo;
@@ -46,7 +46,7 @@ public class College {
 		}
 	}
 	
-	static class Faculity {
+	class Faculity {
 		
 		private String name;
 		private String subject;
@@ -92,13 +92,18 @@ public class College {
 
 	// Driver Code
 	public static void main(String[] args) {
-		College.Student student1 = new College.Student("Vaseem Naazleen", "19BQ1A05L1", "CSE");
-		College.Student student2 = new College.Student("Sharon", "19BQ1A05L2", "CSE");
+		College VVIT = new College();
 		
-		College.Faculity faculity1 = new College.Faculity("Krishna Prasad", "Data Structures", 40000);
-		College.Faculity faculity2 = new College.Faculity("Naga Sriharsha", "Java", 40000);
+		College.Student student1 = VVIT.new Student("Vaseem Naazleen", "19BQ1A05L1", "CSE");
+		College.Student student2 = VVIT.new Student("Sharon", "19BQ1A05L2", "CSE");
+		
+		College.Faculity faculity1 = VVIT.new Faculity("Krishna Prasad", "Data Structures", 40000);
+		College.Faculity faculity2 = VVIT.new Faculity("Naga Sriharsha", "Java", 40000);
 		
 		System.out.println(student1.getInformation());
 		System.out.println(faculity2.getInformation());
+		
+		System.out.println("No of students in college: " + VVIT.numOfStudents);
+		System.out.println("No of teachers in college: " + VVIT.numOfFaculity);
 	}
 }
