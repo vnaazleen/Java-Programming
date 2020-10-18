@@ -8,3 +8,5 @@
 * [Experiment 6](https://github.com/vnaazleen/Java-Programming/blob/master/Experiments/MergeSort.java)
 * [Experiment 7](https://github.com/vnaazleen/Java-Programming/blob/master/Experiments/RollingDice.java)
 * [Experiment 8](https://github.com/vnaazleen/Java-Programming/blob/master/Experiments/ValidateUserName.java)
+* [Experiment 9](https://github.com/vnaazleen/Java-Programming/blob/master/Experiments/)
+* [Experiment 10](https://github.com/vnaazleen/Java-Programming/blob/master/Experiments/RationalNumber.java)
