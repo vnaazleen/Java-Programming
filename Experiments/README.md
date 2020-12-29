@@ -13,3 +13,4 @@
 * [Experiment 11](https://github.com/vnaazleen/Java-Programming/blob/master/Experiments/Shape.java)
 * [Experiment 12](https://github.com/vnaazleen/Java-Programming/tree/master/Experiments/Converter)
 * [Experiment 13](https://github.com/vnaazleen/Java-Programming/blob/master/Experiments/ExceptionHandling.java)
+* [Experiment 18](https://github.com/vnaazleen/Java-Programming/blob/master/Experiments/WordCount.java)
