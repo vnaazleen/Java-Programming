@@ -31,10 +31,10 @@
 |Comparator<? super E>|comparator()| Returns the comparator used to order the elements in this queue, or null if this queue is sorted according to the natural ordering of its elements.|
 |boolean | contains(Object o) | Returns true if this queue contains the specified element|
 |Iterator<E>| iterator() | Returns an iterator over the elements in this queue|
-||boolean	| offer(E e) | Inserts the specified element into this priority queue|
+|boolean	| offer(E e) | Inserts the specified element into this priority queue|
 |E | peek() | Retrieves, but does not remove, the head of this queue, or returns null if this queue is empty|
 |E | poll() | Retrieves and removes the head of this queue, or returns null if this queue is empty|
-|boolean | remove(Object o) | Removes a single instance of the specified element from this queue, if it is present|
+|boolean | remove(Object o) | Removes a single instance of the specified element from this queue, if it is present |
 |int | size()| Returns the number of elements in this collection|
 |Spliterator<E>	| spliterator() | Creates a late-binding and fail-fast Spliterator over the elements in this queue|
 |Object[]|toArray() | Returns an array containing all of the elements in this queue|
