@@ -1,5 +1,6 @@
 # LinkedList
 * java.util package
+* It can also store null value
 * Doubly-linked list implementation of the List and Deque interfaces
 * Note that this implementation is not synchronized.
 
