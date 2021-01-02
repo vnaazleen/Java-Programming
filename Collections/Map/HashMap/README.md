@@ -1,11 +1,15 @@
 # HashMap
 
 * Hash table based implementation of the Map interface. 
+* Null values are allowed
+* Duplicate keys are not allowed, but duplicate values are allowed
+* Insert order is not preserved.
 * This implementation provides constant-time performance for the basic operations (get and put), assuming the hash function disperses the elements properly among the buckets
-* implementation is not synchronized. 
+* implementation is not synchronized.
+* Serializable & Cloneable, Randomized.
 
 ## Constructors
-|   COnstructor | Description|
+|   Constructor | Description|
 |---------------|------------|
 |HashMap()|Constructs an empty HashMap with the default initial capacity (16) and the default load factor (0.75).|
 |HashMap(int initialCapacity)|Constructs an empty HashMap with the specified initial capacity and the default load factor (0.75).|
