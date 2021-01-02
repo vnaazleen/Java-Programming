@@ -1,6 +1,7 @@
 import java.util.HashMap;
 import java.util.Scanner;
 
+
 public class HashMapCollection {
     public static void displayMenu(){
         System.out.println("1. Add Item");
