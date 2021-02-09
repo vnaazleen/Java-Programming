@@ -55,7 +55,7 @@ class Invoice{
                 return invoiceAmount;
        }
 }
-public class Main{
+public class InvoiceTest {
          public static void main(String []args){
                    Invoice myInvoice;
                    myInvoice = new Invoice("19BQ1A05L1", "My First Invoice :)", 5, 2.0);
