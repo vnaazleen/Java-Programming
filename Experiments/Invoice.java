@@ -21,10 +21,18 @@ class Invoice{
             description = desc;
         }
         void setQunatity(int quant) {
-            quantity = quant;
+                if (quant < 0) {
+                        quantity = 0;
+                } else {        
+                        quantity = quant;
+                }
         }
         void setPrice(double pr) {
-            price = pr;
+            if (pr < 0) {
+                        price = 0;
+                } else {        
+                        price = pr;
+                }
         }
        // Getters
         String getNumber() {
