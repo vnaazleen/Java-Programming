@@ -48,18 +48,8 @@ class Invoice{
             return price;
         }
 
-       public double getInvoiceAmount(){
-                 double invoiceAmount = 0.0;
-                // Write your logic here
-                if (quantity < 0) {
-                    invoiceAmount = 0;
-                }
-                else if (price < 0.0) {
-                    invoiceAmount = 0.0;
-                }
-                else {
-                    invoiceAmount = price * quantity;
-                }
+       public double getInvoiceAmount() {
+                double invoiceAmount = price * quantity;
                 return invoiceAmount;
        }
 }
