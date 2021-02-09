@@ -10,8 +10,8 @@ class Invoice{
         public Invoice(String num, String desc, int quant, double pr) {
             number = num;
             description = desc;
-            quantity = quant;
-            price = pr;
+            setQunatity(quant);
+            setPrice(pr);
         }
        // Setters
         void setNumber(String num) {
