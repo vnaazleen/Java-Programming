@@ -10,7 +10,7 @@ public class ElectricityBill {
     private String typeConnection;
 
     // Constructor
-    public Main (String cNo, String cName, String typeCon, int prvMonthReading, int curMonthReading) {
+    public ElectricityBill (String cNo, String cName, String typeCon, int prvMonthReading, int curMonthReading) {
         consumerNo = cNo;
         consumerName = cName;
         typeConnection = typeCon;
@@ -61,7 +61,7 @@ public class ElectricityBill {
     }
 
     // Calculating Electricity bill based on type of EB typeConnection
-    public double billAmount() {
+    public double getBillAmount() {
         int units = currMonthReading - prevMonthReading;
         double amount = 0;
         if (typeConnection.toLowerCase().equals("domestic")) {
@@ -108,15 +108,30 @@ public class ElectricityBill {
         System.out.println("Current Month Reading " + eb.getCurrMonthReading());
 
         // Calculating bill
-        double bill = eb.billAmount();
+        double bill = eb.getBillAmount();
         System.out.println("Your Bill: " + bill);
 
         // Chaging the type of account
-        System.out.println("\nChaging the type of EB account...\n");
+        System.out.println("\nChanging the type of EB account...\n");
         eb.setTypeConnection("Domestic");
 
-        bill = eb.billAmount();
+        bill = eb.getBillAmount();
         System.out.println("Your Bill: " + bill);
+        
+        /*
+        output:
+
+        Customer ID: 19BQ1A05L1
+        Customer Name: Vaseem Naazleen
+        Type of EB Connection: Commercial
+        Previous Month Reading: 5000
+        Current Month Reading 5600
+        Your Bill: 2550.0
+
+        Changing the type of EB account...
+
+        Your Bill: 2150.0
+        */
 
     }
 
