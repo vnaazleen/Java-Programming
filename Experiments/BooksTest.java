@@ -33,11 +33,11 @@ class Book {
     }
 
     public void setAuthorname (String authorNme) {
-        this.bookName = authorNme;
+        this.authorName = authorNme;
     }
 
     public void setPublisher (String pub) {
-        this.bookName = pub;
+        this.publisher = pub;
     }
 
     // Accessor methods or Getters
@@ -46,15 +46,15 @@ class Book {
     }
 
     public String getISBNNumber () {
-        return this.bookName;
+        return this.isbnNumber;
     }
 
     public String getAuthorname () {
-        return this.bookName;
+        return this.authorName;
     }
 
     public String getPublisher () {
-        return this.bookName;
+        return this.publisher;
     }
 
     public String getBookInfo () {
