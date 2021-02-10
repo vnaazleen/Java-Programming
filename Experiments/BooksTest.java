@@ -68,7 +68,7 @@ class Book {
 
 }
 
-public class BooksApp {
+public class BooksTest {
     // Book test Application
     public static void main(String[] args) {
         // Input
