@@ -22,14 +22,34 @@ public class RationalNumber {
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 		
+		/**
+		taking input 2 numbers
+		*/
 		int n1 = in.nextInt();
 		int n2 = in.nextInt();
 		
+		/**
+		calculating GCD of two numbers
+		*/
 		int d = gcd(n1, n2);
 		
+		/**
+		Divide the two numbers with their GCD
+		*/
 		int dn1 = n1 / d;
 		int dn2 = n2 / d;
 		
 		System.out.println(n1 + " / " + n2 + " Should be represented as " + dn1 + " / " + dn2);
+		
+		/**
+		
+		Input:
+		500
+		1000
+		
+		Output:
+		50 / 100 Should be represented as 1 / 2
+		
+		*/
 	}
 }
