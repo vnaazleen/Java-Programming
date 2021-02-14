@@ -10,7 +10,7 @@
 * [Experiment 8](https://github.com/vnaazleen/Java-Programming/blob/master/Experiments/ValidateUserName.java)
 * [Experiment 9](https://github.com/vnaazleen/Java-Programming/blob/master/Experiments/Experiment9.java)
 * [Experiment 10](https://github.com/vnaazleen/Java-Programming/blob/master/Experiments/RationalNumber.java)
-* [Experiment 11](https://github.com/vnaazleen/Java-Programming/blob/master/Experiments/Shape.java)
+* [Experiment 11](https://github.com/vnaazleen/Java-Programming/blob/master/Experiments/Experiment11.java)
 * [Experiment 12](https://github.com/vnaazleen/Java-Programming/tree/master/Experiments/Converter)
 * [Experiment 13](https://github.com/vnaazleen/Java-Programming/blob/master/Experiments/ExceptionHandling.java)
 * [Experiment 14](https://github.com/vnaazleen/Java-Programming/blob/master/Experiments/MainThread.java)
