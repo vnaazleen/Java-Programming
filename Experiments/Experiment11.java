@@ -28,7 +28,7 @@ class Circle extends Shape {
 	}
 }
 
-class Experiment11 {
+public class Experiment11 {
 	// Driver Code for testing
 	public static void main(String[] args) {
 		Rectangle rt = new Rectangle();
