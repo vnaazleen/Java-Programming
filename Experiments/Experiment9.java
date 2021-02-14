@@ -14,7 +14,7 @@ class Employee {
 		System.out.println("Name: " + EmployeeName);
 		System.out.println("ID: " + id);
 		System.out.println("Mail: " + MailId);
-		System.out.println("Phone number: ");
+		System.out.println("Phone number: " + MobileNo);
 	}
 
 }
