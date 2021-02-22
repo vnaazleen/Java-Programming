@@ -59,4 +59,39 @@ public class Experiment15 {
         RandomNumberGenerator randNumGen = new RandomNumberGenerator();
         randNumGen.start();
     }
+    
+    /*
+Sample output:
+    
+Random number generated: 66
+66 is even
+Random number generated: 65
+65 is odd
+Square of 66 = 4356
+Random number generated: 8
+8 is even
+Random number generated: 37
+37 is odd
+Square of 8 = 64
+Random number generated: 4
+4 is even
+Cube of 65 = 274625
+Random number generated: 38
+38 is even
+Cube of 37 = 50653
+Random number generated: 13
+13 is odd
+Square of 4 = 16
+Random number generated: 61
+61 is odd
+Cube of 13 = 2197
+Random number generated: 7
+7 is odd
+Cube of 61 = 226981
+Random number generated: 99
+99 is odd
+Cube of 7 = 343
+Square of 38 = 1444
+Cube of 99 = 970299
+*/
 }
