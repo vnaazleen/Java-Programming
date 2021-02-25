@@ -10,7 +10,7 @@ class SavingsAccount {
 
     public double calculateMonthlyInterest()
     {
-        double montlyInterset = (savingsBalance * annualInterestRate) / 2;
+        double montlyInterset = (savingsBalance * annualInterestRate) / 12;
         savingsBalance += montlyInterset;
         return savingsBalance;
     }
